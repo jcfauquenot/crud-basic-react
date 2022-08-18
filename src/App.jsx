@@ -2,8 +2,12 @@ import React, { useState, Fragment } from "react";
 import UserTable from "./components/UserTable";
 import AddUserForm from "./components/AddUSerForm";
 import EditUserForm from "./components/EditUserForm";
+import FlatButton from "./components/FlatButton";
+import CardApi from "./components/CardApi";
 
-import "./App.css";
+// import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Info from "./components/Info";
 
 const App = () => {
   const usersData = [
@@ -43,6 +47,10 @@ const App = () => {
   return (
     <div className="container">
       <h1>CRUD App with Hooks</h1>
+      <CardApi />
+      <FlatButton />
+      <Info />
+
       <div className="flex-row">
         <div className="flex-large">
           {editing ? (
