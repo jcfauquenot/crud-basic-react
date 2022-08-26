@@ -4,6 +4,7 @@ import AddUserForm from "./components/AddUSerForm";
 import EditUserForm from "./components/EditUserForm";
 import FlatButton from "./components/FlatButton";
 import CardApi from "./components/CardApi";
+import Login from "./components/Login.jsx";
 
 // import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -46,10 +47,9 @@ const App = () => {
 
   return (
     <div className="container">
+      <Login />
       <h1>CRUD App with Hooks</h1>
-      <CardApi />
       <FlatButton />
-      <Info />
 
       <div className="flex-row">
         <div className="flex-large">
